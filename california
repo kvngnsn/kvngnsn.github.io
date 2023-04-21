@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="https://i.imgur.com/MnUfyBc.png" type="image/png">
+  <head>
+    <title>Californian City Planning</title>
+    <meta name="description" content="News and Analysis">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 15px 0;
+        padding: 0;
+        display: flex;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      .title {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .post {
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 800px;
+      }
+      .post img {
+        width: 95%;
+        margin: 15px auto 20px
+      }
+      .post h1 {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .post h2 {
+        font-size: 28px;
+        font-weight: normal;
+        margin: 10px 0px 5px;
+      }
+      .post h3 {
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0px 10 10 10;
+      }
+      .post h4 {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0px 10 10 10;
+        color: #777;
+      }
+      footer {
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="science.html">Science</a></li>
+          <li><a href="tech.html">Technology</a></li>
+          <li><a href="politics.html">Politics</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="title">
+      <h1>The International Observer</h1>
+    </div>
+    <main>
+      <section class="post">
+        <h1>California's City Planning is Wildly Inefficient</h1>
+        <h4>By Rose Alvaraz (📍 San Jose, CA)</h4>
+        <img src="https://i.imgur.com/8Tq3PRk.png" alt="Article Image">
+        <h2>Problems with California</h2>
+        <h3>California is a state that has been facing a lot of issues when it comes to city planning. The state is densely populated, but the cities are not utilizing their space efficiently. This has led to various issues, including homelessness, traffic congestion, and environmental problems. California needs to take immediate action to address these issues.</h3>
+        <h3>One of the primary issues is homelessness. California has one of the highest homeless populations in the United States, and it is continuing to increase. The current approach of building shelters and low-income housing is not enough. The state needs to build more high-rise apartment buildings to increase density and provide affordable housing. High-rise buildings are more efficient because they allow for more people to live in a smaller space. This would help decrease the number of homeless people and provide them with a stable living environment.</h3>
+        <h3>The high cost of living in the Bay Area is a major issue that is affecting many people. One of the main contributors to this problem is the lack of affordable housing. Building high-rise apartment buildings would help to lower the cost of housing by increasing the supply of available units. With more housing options available, the demand for housing would decrease, leading to lower prices. This would make living in the Bay Area more affordable for everyone, including low-income families and individuals. By addressing the housing crisis, the cost of living crisis in the Bay Area could be brought to an end, making the region more accessible and equitable for all.</h3>
+        <h3>Another issue is traffic congestion. California has some of the worst traffic in the United States. This is because the cities were designed in a way that encourages people to use their cars instead of public transportation. High-rise buildings are usually built near public transportation, making it easier for people to access it. This would encourage people to use public transportation instead of driving their cars, leading to less traffic congestion and fewer greenhouse gas emissions.</h3>
+        <h3>Building high-rise buildings would also help with environmental problems. California has been facing various environmental issues, including droughts and wildfires. High-rise buildings use less land and resources than single-family homes, reducing their impact on the environment. Additionally, high-rise buildings can incorporate green technologies such as solar panels and green roofs, further reducing their impact on the environment.</h3>
+        <h3>In conclusion, California needs to take action to address its city planning issues. Building high-rise apartment buildings is an effective solution to increase density, provide affordable housing, decrease traffic congestion, and reduce environmental impact. It is time for California to embrace high-rise buildings and start building the cities of the future.</h3>
+    </main>
+    <footer>
+      <p>&copy; 2023 The International Observer. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
