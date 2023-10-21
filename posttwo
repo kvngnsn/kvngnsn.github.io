@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="https://i.imgur.com/MnUfyBc.png" type="image/png">
+  <head>
+    <title>Sunken Place</title>
+    <meta name="description" content="News and Analysis">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 15px 0;
+        padding: 0;
+        display: flex;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      .title {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .post {
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 800px;
+      }
+      .post img {
+        width: 95%;
+        margin: 15px auto 20px
+      }
+      .post h1 {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .post h2 {
+        font-size: 28px;
+        font-weight: normal;
+        margin: 10px 0px 5px;
+      }
+      .post h3 {
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0px 10 10 10;
+      }
+      .post h4 {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0px 10 10 10;
+        color: #777;
+      }
+      footer {
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="science.html">Science</a></li>
+          <li><a href="tech.html">Technology</a></li>
+          <li><a href="politics.html">Politics</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="title">
+      <h1>The International Observer</h1>
+    </div>
+    <main>
+      <section class="post">
+        <h1>The Complicity of Asian-Americans when it comes to Black Lives</h1>
+        <h4>By Kavin Ganesan (📍 Oakland, CA)</h4>
+        <img src="https://gcdnb.pbrd.co/images/W2Hcat9C1bSx.png?o=1" alt="Article Image">
+        <h2>How 'Get Out' reveals Anti-Black racism, not just by whites</h2>
+        <h3>Every racially tinged horror movie, from ‘Get Out’ to First off, I want to establish that this is not an attack on my community. I am not insinuating that some ethnicities have a problem with racism, while others are perfect. I am simply raising awareness about issues in our communities, so we can all move forward with a more equitable society where people treat one another with respect.</h3>
+        <h3>With that said, I think it's highly important to talk about the complicity of Asian, and especially Indian-Americans when it comes to black lives. Jordan Peele's 'Get Out' was a highly praised and well-received movie. Though one scene in particular left many in the Asian-American community confused. I am of course, referring to the scene with Hiroki Tanaka, a Japanese-American character who, besides Chris and Andre, was the only non-white character present at Chris' abduction sale. I remember watching this scene, puzzled, as to why an Asian-American character was on the same side as white people in a movie so clearly racialized. But as I dug deeper, the cracks started widening, and I began to see the bigger picture.</h3>
+        <h3>I am a member of the Indian-American community, who was born in India and raised in the United States. My family members grew up in India, without access to equity/diversity training. I don't mean to call anyone out, but the things they've said about African-Americans could be mistaken for a rural white southerner. It's common for many Indian-Americans to roll up the windows whenever their parents are talking about black people. This sentiment, while I understand why it exists, should be deeply worrying to any member of the Asian-American community. Our culture, which discourages talking back to our parents, prevents any actual conversation from taking place regarding this issue. This is worsened further, considering Indian-Americans are over represented in the Tech industry, the fastest growing job sector. A racist hiring policy in this industry could prevent black people from raising their economic state. This is already in a white-dominated world where white ex-convicts are preferable to blacks with a clean record (in the context of hiring, as demonstrated by a study). </h3>
+        <h3>All of that considered, I did not expect Peele to share this perspective. In order to dig deeper, I looked into tensions during the 1992 Rodney King riots. According to a Dartmouth History Archive, "April 29, 1992, is known as "sa-i-gu" to Korean Americans... Rather than being simply a riot between blacks and whites, it involved Korean Americans... their stores were burnt down to the ground and looted...The African Americans believed that the Koreans were exploitative and would not hire blacks....Koreans, on the other hand, believed that the blacks were poor, violent, and lazy." The tension between these two communities likely contributed to Peele's decision to include an Asian character in Get Out.</h3>
+        <h3>Sources: https://www.dartmouth.edu/~hist32/History/S21%20-%20Media%20Misrepresentations%20of%20the%20LA%20Riot.htm.</h3>
+		<h3>Word Count: 404, not including quotes</h3>
+    </main>
+    <footer>
+      <p>&copy; 2023 The International Observer. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
