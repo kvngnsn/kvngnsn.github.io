@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="https://i.imgur.com/MnUfyBc.png" type="image/png">
+  <head>
+    <title>Fracking: Pros & Cons</title>
+    <meta name="description" content="News and Analysis">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 15px 0;
+        padding: 0;
+        display: flex;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      .title {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .post {
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 800px;
+      }
+      .post img {
+        width: 95%;
+        margin: 15px auto 20px
+      }
+      .post h1 {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .post h2 {
+        font-size: 28px;
+        font-weight: normal;
+        margin: 10px 0px 5px;
+      }
+      .post h3 {
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0px 10 10 10;
+      }
+      .post h4 {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0px 10 10 10;
+        color: #777;
+      }
+      footer {
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="science.html">Science</a></li>
+          <li><a href="tech.html">Technology</a></li>
+          <li><a href="politics.html">Politics</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="title">
+      <h1>The International Observer</h1>
+    </div>
+    <main>
+      <section class="post">
+        <h1>Space Traders' Strange Portrayal of the Civil Rights Movement</h1>
+        <h4>By Kavin Ganesan (📍 Outer Space)</h4>
+        <img src="https://sciencefiction.com/wp-content/uploads/2018/02/a-journey-of-discovery-3160528_1280-e1519898237224.jpg" alt="Article Image">
+        <h2>The Space Traders</h2>
+        <h3>The Space Traders is a movie about a future United States, riddled with pollution, poverty, and problems, given a binary dilemma. The country has the choice to surrender its entire black population in exchange for infinite energy, and a solution to all of their problems. In particular, a scene I was interested in is the scene discussing the civil rights movement, and how various organizations responded to the referendum. In the scene, the main character, Golightly, proposes an alternative method that would benefit those who opposed the referendum. However, this proposal is adamantly rejected, who instead continue their allegedly ineffective methods such as boycotts and protests. The movement is portrayed as disoriented, conflicted, and irrational. Another example is when a Jewish Rabbi gave a brief statement supporting the movement. This was met with a disparaging, hostile remark, where a member accused the rabbi of having self-interested reasons. It almost seems as though the film was actively exaggerating the negative aspects of the civil rights movement. In a way, it seems to be criticizing the allegedly ineffective methods used by the civil rights movement such as boycotts and protests. Instead, it seems as though the authors of the film are advocating for more innovative strategies, such as those suggested by Golightly, to be implemented. </h3>
+        <h3>However, the portrayal doesn’t need to be interpreted as negative. In fact, it could be raising awareness regarding the dis-unity of the black community in many situations, highlighting the need for greater unity and better strategy. Exaggeration of negativity can be a valid criticism with motivations for actual change, rather than just a blanket criticism with more malicious intentions. For this reason, I do not think that this scene was intended to be malicious. I want to be very clear, I am in no position to make organizational judgments on the effectiveness or structure of the civil rights movement, nor the black community in general. My perspective is useful for the following reasons: To an outsider that has little knowledge of the civil rights movement, this film does not increase my opinion or understanding of the movement. Instead, it makes me sympathize with the main character, who is very clearly flawed. </h3>
+        <h3>However, to an extent I understand the point of view in which the authors of the film act in. While in no way are they defending the main character, the main character’s strategy is to create opposition to the vote using support from those who have significant societal power, such as industries composed of elites worth trillions of dollars. In some way, there exist parallels between this strategy and the struggle against Apartheid in South Africa. The white-lead government of South Africa was toppled, in part because the inner circle, business elites, and oligarchs began to realize the benefits of being able to serve black consumers, and export to the global market. One of the anti-apartheid movement’s greatest successes was getting white business elites on their side, as it removed a major pillar of support for the racist regime. Overall, there is a rich message in ‘Space Traders,’ that is worth great analysis and deep introspection. The flaws of organized protest are critiqued in a rather interesting way. </h3>
+    </main>
+    <footer>
+      <p>&copy; 2023 The International Observer. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
