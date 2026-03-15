@@ -1,114 +1,753 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<link rel="icon" href="https://i.imgur.com/MnUfyBc.png" type="image/png">
-  <head>
-    <title>The International Observer</title>
-    <meta name="description" content="News and Analysis">
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background-color: black;
-        color: white;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      nav ul {
-        list-style: none;
-        margin: 15px 0;
-        padding: 0;
-        display: flex;
-      }
-      nav li {
-        margin: 0 10px;
-      }
-      nav a {
-        color: white;
-        text-decoration: none;
-      }
-      .title {
-        font-size: 38px;
-		margin: 0px 10 10 10;
-        text-align: center;
-      }
-      footer {
-        padding: 20px;
-        background-color: #f2f2f2;
-        text-align: center;
-      }
-      a {
-  		text-decoration: none;
-        color: black;
-      }
-      .about-us {
-    	margin: 50px;
-      }
-      .about-us h1 {
-		font-size: 30px
-      }
-      .meet-our-team {
-    	margin: 50px;
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavin Ganesan</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8;
+    --ink: #1a1410;
+    --gold: #b8972a;
+    --gold-light: #d4af50;
+    --rust: #8b3a2a;
+    --warm-gray: #6b6258;
+    --line: #c8bfb0;
+    --card-bg: #faf7f2;
+  }
 
-      }
-      .meet-our-team h1 {
-    	font-size: 30px
-      }
-      .meet-our-team h2 {
-    	font-size: 16px;
-      }
-      .meet-our-team h3 {
-    	font-size: 12px;
-        margin-bottom: 40px
-      }
-      .column {
-      	float: left;
-		width: 33.33%;
-        padding: 5px;
-      }
-      .row::after {
-  		content: "";
-  		clear: both;
-  		display: table;
-      }
-      img {
-		max-width: 600px;
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-}
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="science.html">Science</a></li>
-          <li><a href="tech.html">Technology</a></li>
-          <li><a href="politics.html">Politics</a></li>
-          <li><a href="about.html">About Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="title">
-      <h1>The International Observer</h1>
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: var(--cream);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  .left-quote {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    color: rgba(184,151,42,0.75);
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 8px;
+    letter-spacing: 0.2px;
+  }
+
+  /* ── HERO LAYOUT ─────────────────────────────── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2px 2fr;
+    position: relative;
+  }
+
+  /* LEFT PANEL */
+  .left-panel {
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: var(--ink);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  .headshot-wrap {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    padding: 4px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .headshot-wrap::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(184,151,42,0.15), transparent 60%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .headshot-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(160deg, #3a3028 0%, #2a2018 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: -2px;
+  }
+
+  .left-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cream);
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+  }
+
+  .left-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--gold);
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .left-bday {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--gold);
+    text-align: center;
+    letter-spacing: 0.4px;
+  }
+
+  .left-divider {
+    width: 40px;
+    height: 1px;
+    background: rgba(184,151,42,0.4);
+    margin: 4px 0;
+  }
+
+  .left-edu {
+    font-size: 13px;
+    color: rgba(245,240,232,0.55);
+    text-align: center;
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  .left-edu strong {
+    color: rgba(245,240,232,0.8);
+    font-style: normal;
+    font-weight: 500;
+    display: block;
+    font-size: 13px;
+  }
+
+  /* DIVIDER LINE */
+  .panel-divider {
+    background: rgba(200,191,176,0.2);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+
+  /* RIGHT PANEL */
+  .right-panel {
+    padding: 0 0 120px 0;
+    background: var(--cream);
+    position: relative;
+  }
+
+  /* ── TIMELINE ─────────────────────────────────── */
+  .timeline {
+    position: relative;
+    padding: 0;
+  }
+
+  /* The vertical spine */
+  .spine {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, var(--gold) 5%, var(--gold) 95%, transparent 100%);
+    opacity: 0.5;
+  }
+
+  /* Each timeline entry */
+  .tl-entry {
+    position: relative;
+    display: grid;
+    min-height: 220px;
+    align-items: start;
+    padding: 60px 0;
+  }
+
+  .tl-entry.right-content {
+    grid-template-columns: 1fr 80px 1fr;
+  }
+
+  .tl-entry.left-content {
+    grid-template-columns: 1fr 80px 1fr;
+  }
+
+  .tl-entry.split-content {
+    grid-template-columns: 1fr 80px 1fr;
+  }
+
+  /* The node circle */
+  .tl-node {
+    grid-column: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 8px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .node-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .node-circle:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 6px rgba(184,151,42,0.12);
+  }
+
+  .node-circle .logo-text {
+    font-family: 'Syne', sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    color: var(--gold);
+    text-align: center;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    padding: 4px;
+  }
+
+  .node-circle .org-initials {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: -1px;
+  }
+
+  /* Content blocks */
+  .tl-content-right {
+    grid-column: 3;
+    padding: 0 40px 0 24px;
+  }
+
+  .tl-content-left {
+    grid-column: 1;
+    padding: 0 24px 0 40px;
+    text-align: right;
+  }
+
+  .tl-content-left .bullets {
+    text-align: right;
+  }
+
+  /* Split entry: two orgs side by side */
+  .split-left {
+    grid-column: 1;
+    padding: 0 24px 0 40px;
+    text-align: right;
+  }
+
+  .split-right {
+    grid-column: 3;
+    padding: 0 40px 0 24px;
+  }
+
+  .tl-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+
+  .tl-org {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 2px;
+    line-height: 1.2;
+  }
+
+  .tl-location {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--warm-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .tl-dates {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+
+  .bullets {
+    list-style: none;
+  }
+
+  .bullets li {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--warm-gray);
+    margin-bottom: 4px;
+    position: relative;
+  }
+
+  .tl-content-right .bullets li::before,
+  .split-right .bullets li::before {
+    content: '—';
+    color: var(--gold);
+    margin-right: 8px;
+    font-size: 12px;
+  }
+
+  .tl-content-left .bullets li,
+  .split-left .bullets li {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  .tl-content-left .bullets li::after,
+  .split-left .bullets li::after {
+    content: '—';
+    color: var(--gold);
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  /* ── FIRST HERO ENTRY ─────────────────────────── */
+  .hero-entry {
+    padding: 80px 0 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    min-height: 260px;
+  }
+
+  .hero-node {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+  }
+
+  .hero-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 0 8px rgba(184,151,42,0.06), 0 12px 40px rgba(26,20,16,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hero-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 12px rgba(184,151,42,0.1), 0 16px 50px rgba(26,20,16,0.2);
+  }
+
+  .da-logo {
+    text-align: center;
+  }
+
+  .da-logo-top {
+    font-family: 'Syne', sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  .da-logo-bottom {
+    font-family: 'Syne', sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    color: rgba(184,151,42,0.6);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+  }
+
+  .hero-content-right {
+    grid-column: 3;
+    padding: 12px 40px 0 28px;
+  }
+
+  .hero-content-right .tl-title {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+  }
+
+  .hero-content-right .tl-org {
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+
+  .hero-content-right .bullets li {
+    font-size: 14px;
+  }
+
+  /* ── TALL SPLIT (EAI left, TIO stacked right) ──────── */
+  .split-tall {
+    grid-template-columns: 1fr 80px 1fr;
+    align-items: stretch;
+    padding: 60px 0;
+  }
+
+  .split-tall-left {
+    grid-column: 1;
+    padding: 0 24px 0 40px;
+    text-align: right;
+  }
+
+  .split-tall-left .bullets li {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  .split-tall-left .bullets li::after {
+    content: '—';
+    color: var(--gold);
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  .split-tall-center {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    gap: 0;
+    position: relative;
+    z-index: 2;
+    align-self: stretch;
+  }
+
+  .sub-spine {
+    width: 2px;
+    flex: 1 1 auto;
+    min-height: 24px;
+    background: linear-gradient(to bottom, var(--gold), rgba(184,151,42,0.3));
+    opacity: 0.6;
+  }
+
+  .split-tall-right {
+    grid-column: 3;
+    padding: 0 40px 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .tio-block {
+    flex: 1 1 auto;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .tio-sub {
+    padding-top: 12px;
+    border-top: 1px solid rgba(184,151,42,0.15);
+  }
+
+  /* ── SUB NODE (smaller, branched) ──────────────────── */
+  .sub-entry {
+    padding: 0 0 40px 0;
+    min-height: 100px;
+  }
+
+  .sub-node {
+    width: 48px !important;
+    height: 48px !important;
+    border-color: rgba(184,151,42,0.5) !important;
+    background: var(--cream) !important;
+  }
+
+  .sub-node .logo-text {
+    color: var(--gold) !important;
+    font-size: 8px !important;
+  }
+
+  .founder-quote {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--gold);
+    border-left: 2px solid var(--gold);
+    padding: 4px 0 4px 12px;
+    margin: 8px 0 16px 0;
+    opacity: 0.85;
+    letter-spacing: 0.2px;
+  }
+
+  /* ── SECTION LABEL ──────────────────────────────── */
+  .section-label {
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(107,98,88,0.5);
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .left-panel > * {
+    animation: fadeUp 0.6s ease both;
+  }
+  .left-panel > *:nth-child(1) { animation-delay: 0.1s; }
+  .left-panel > *:nth-child(2) { animation-delay: 0.2s; }
+  .left-panel > *:nth-child(3) { animation-delay: 0.3s; }
+  .left-panel > *:nth-child(4) { animation-delay: 0.35s; }
+  .left-panel > *:nth-child(5) { animation-delay: 0.4s; }
+  .left-panel > *:nth-child(6) { animation-delay: 0.45s; }
+  .left-panel > *:nth-child(7) { animation-delay: 0.5s; }
+
+  .tl-entry, .hero-entry {
+    opacity: 0;
+    animation: fadeUp 0.7s ease both;
+  }
+  .hero-entry { animation-delay: 0.3s; }
+  .tl-entry:nth-of-type(1) { animation-delay: 0.5s; }
+  .tl-entry:nth-of-type(2) { animation-delay: 0.65s; }
+  .tl-entry:nth-of-type(3) { animation-delay: 0.8s; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+    .left-panel { position: relative; height: auto; padding: 48px 24px; }
+    .panel-divider { display: none; }
+    .tl-entry, .hero-entry {
+      grid-template-columns: 1fr;
+      padding: 32px 24px;
+    }
+    .tl-node, .hero-node { grid-column: 1; justify-content: flex-start; }
+    .tl-content-right, .tl-content-left, .hero-content-right,
+    .split-left, .split-right {
+      grid-column: 1;
+      padding: 0;
+      text-align: left;
+    }
+    .tl-content-left .bullets li, .split-left .bullets li {
+      justify-content: flex-start;
+    }
+    .tl-content-left .bullets li::after, .split-left .bullets li::after { display: none; }
+    .tl-content-right .bullets li::before, .split-right .bullets li::before,
+    .tl-content-left .bullets li::before, .split-left .bullets li::before { content: '—'; color: var(--gold); margin-right: 8px; }
+    .spine { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+
+  <!-- LEFT STICKY PANEL -->
+  <div class="left-panel">
+    <div class="headshot-wrap">
+      <div class="headshot-placeholder">KG</div>
     </div>
-	<main>
-		<section class="about-us">
-			<h1>About Us</h1>
-			<p>CURRENTLY M.I.A.</p>
-			<p>Contact Kavin for more info lol</p>
-			<p>Thank you for visiting our website, and we hope you enjoy our content</p>
-		</section>
-		<section class="meet-our-team">
-        	<h1>Meet Our Staff</h1>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 News Website. All rights reserved.</p>
-	</footer>
+    <div class="left-name">Kavin Ganesan</div>
+    <div class="left-tag">Founder · DiscoveryAssist</div>
+    <div class="left-bday">Birthday: August 15, 2005 &nbsp;·&nbsp; <span id="age-display">Age 20</span></div>
+    <div class="left-divider"></div>
+    <div class="left-edu">
+      <strong>Georgetown University Law Center</strong>
+      JD (2028)
+    </div>
+    <div class="left-divider"></div>
+    <div class="left-edu">
+      <strong>University of California, Los Angeles</strong>
+      BA (2025)
+    </div>
+    <div class="left-divider"></div>
+    <div class="left-quote">"Fortes fortuna adiuvat,<br>me stultitia amat."</div>
+  </div>
+
+  <!-- PANEL DIVIDER -->
+  <div class="panel-divider"></div>
+
+  <!-- RIGHT SCROLLING PANEL -->
+  <div class="right-panel">
+    <div class="timeline">
+      <div class="spine"></div>
+
+      <!-- ── DISCOVERYASSIST (hero node) ── -->
+      <div class="hero-entry">
+        <div class="hero-node">
+          <div class="hero-circle">
+            <div class="da-logo">
+              <span class="da-logo-top">Discovery</span>
+              <span class="da-logo-bottom">Assist</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-content-right">
+          <div class="tl-title">Current · Founder</div>
+          <div class="tl-org">DiscoveryAssist</div>
+          <div class="tl-dates">Present</div>
+          <ul class="bullets">
+            <li>At 20, building the AI litigation assistant for PI firms: automating case filing, discovery requests, med-rec audits, subpoenas, and motions</li>
+            <li>The legal domain expertise comes from me; my cofounder brings the engineering. Together we're replacing what used to take a litigation assistant a week with a 3-minute workflow</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ── COUNTRYWIDE TRIAL LAWYERS ── -->
+      <div class="tl-entry left-content">
+        <div class="tl-content-left">
+          <div class="tl-title">Litigation Assistant</div>
+          <div class="tl-org">Countrywide Trial Lawyers</div>
+          <div class="tl-location">Los Angeles, CA</div>
+          <div class="tl-dates">January 2025 – June 2025</div>
+          <ul class="bullets">
+            <li>This is where DiscoveryAssist was born. Running 200+ active PI cases gave me an intimate understanding of exactly where paralegal time goes: drafting pleadings, propounding discovery, chasing records</li>
+            <li>Didn't just observe the workflow; owned it. Drafted 100+ pleadings and 200+ discovery requests by hand</li>
+            <li>Left knowing precisely what to build</li>
+          </ul>
+        </div>
+        <div class="tl-node">
+          <div class="node-circle">
+            <div class="org-initials">CTL</div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+
+      <!-- ── SPLIT: ELITE AUTOMOBILE (left) + TIO Editor+Columnist stacked (right) ── -->
+      <div class="tl-entry split-tall">
+        <!-- EAI on left, vertically centered -->
+        <div class="split-left split-tall-left">
+          <div class="tl-title">Founder & Principal</div>
+          <div class="tl-org">Elite Automobile Imports</div>
+          <div class="tl-location">Los Angeles, CA</div>
+          <div class="tl-dates">August 2023 – December 2024</div>
+          <ul class="bullets">
+            <li>Founded and ran a cross-border luxury vehicle import business at 20: sourced inventory internationally, navigated customs and compliance, and developed a repeatable customer acquisition process</li>
+            <li>Walked away with ~$50K profit and the conviction that I can sell anything I believe in</li>
+            <li>The connections made with buyers taught me more about sales and trust than anything else. I know how to get customers</li>
+          </ul>
+        </div>
+
+        <!-- Centre: main node + mini spine + sub-node -->
+        <div class="tl-node split-tall-center">
+          <div class="node-circle">
+            <div class="logo-text">EAI · TIO</div>
+          </div>
+          <div class="sub-spine"></div>
+          <div class="node-circle sub-node">
+            <div class="logo-text">TIO</div>
+          </div>
+        </div>
+
+        <!-- TIO Editor then Columnist stacked on right -->
+        <div class="split-tall-right">
+          <div class="tio-block">
+            <div class="tl-title">Editor</div>
+            <div class="tl-org">The International Observer</div>
+            <div class="tl-location">Los Angeles, CA</div>
+            <div class="tl-dates">January 2024 – December 2024</div>
+            <ul class="bullets">
+              <li>Went from staff columnist to Editor with final publication authority over all international coverage</li>
+              <li>Learned to evaluate arguments critically and communicate with authority — skills that transfer directly to legal drafting and client-facing work</li>
+            </ul>
+          </div>
+          <div class="tio-block tio-sub">
+            <div class="tl-title">Columnist</div>
+            <div class="tl-dates">August 2023 – December 2023</div>
+            <ul class="bullets">
+              <li>Authored award-winning analyses on conflict dynamics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── K1 SPEED ── -->
+      <div class="tl-entry left-content">
+        <div class="tl-content-left">
+          <div class="tl-title">Instructor</div>
+          <div class="tl-org">K1 Speed</div>
+          <div class="tl-location">Los Angeles, CA</div>
+          <div class="tl-dates">June 2023 – December 2024</div>
+          <ul class="bullets">
+            <li>Instructing 30+ students in high-performance driving sharpened my ability to explain complex ideas simply and build trust fast — skills I use every time I get in front of a firm</li>
+          </ul>
+        </div>
+        <div class="tl-node">
+          <div class="node-circle">
+            <div class="org-initials">K1</div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="section-label">End of Timeline</div>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const bday = new Date(2005, 7, 15); // August 15, 2005
+  const today = new Date();
+  let age = today.getFullYear() - bday.getFullYear();
+  const m = today.getMonth() - bday.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < bday.getDate())) age--;
+  document.getElementById('age-display').textContent = 'Age ' + age;
+</script>
 </body>
 </html>
